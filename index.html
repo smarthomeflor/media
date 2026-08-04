@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0110)file:///Users/bigboss/Documents/Codex/2026-08-04/referenced-chatgpt-conversation-this-is-an/outputs/index.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#86b342">
+  <meta name="description" content="SmartHomeFlor Medienbibliothek für Icons, Bilder und Illustrationen.">
+  <title>SmartHomeFlor Medienbibliothek</title>
+  <style>
+    :root {
+      --green: #86b342;
+      --green-dark: #668d2e;
+      --ink: #3b454a;
+      --muted: #748087;
+      --line: #e7ece8;
+      --bg: #f7faf7;
+      --card: #ffffff;
+      --shadow: 0 14px 36px rgba(59, 69, 74, .08);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+    header { background: #fff; border-bottom: 1px solid var(--line); }
+    .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; font-weight: 800; letter-spacing: -.03em; }
+    .brand-mark { width: 38px; height: 38px; display: grid; place-items: center; color: #fff; background: var(--green); border-radius: 12px; font-size: 20px; box-shadow: 0 7px 18px rgba(134, 179, 66, .28); }
+    .brand span { font-size: 18px; }
+    .github { color: var(--muted); font-size: 13px; text-decoration: none; }
+    .hero { padding: 66px 0 42px; background: radial-gradient(circle at 86% 16%, rgba(134,179,66,.17), transparent 28%), #fff; }
+    .eyebrow { color: var(--green-dark); font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { max-width: 720px; margin: 12px 0 16px; font-size: clamp(34px, 5vw, 64px); line-height: 1.04; letter-spacing: -.055em; }
+    .lead { max-width: 650px; margin: 0; color: var(--muted); font-size: 18px; }
+    .toolbar { margin-top: 31px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .search { flex: 1 1 280px; position: relative; }
+    .search input { width: 100%; padding: 15px 18px 15px 46px; border: 1px solid var(--line); border-radius: 13px; color: var(--ink); background: #fff; font: inherit; outline: none; box-shadow: 0 5px 16px rgba(59,69,74,.04); }
+    .search input:focus { border-color: var(--green); box-shadow: 0 0 0 4px rgba(134,179,66,.14); }
+    .search svg { position: absolute; top: 15px; left: 17px; width: 20px; color: var(--muted); }
+    .refresh { border: 0; border-radius: 13px; padding: 15px 18px; color: #fff; background: var(--ink); font: inherit; font-weight: 700; cursor: pointer; }
+    .refresh:hover { background: #273137; }
+    main { padding: 34px 0 72px; }
+    .section-head { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin-bottom: 18px; }
+    h2 { margin: 0; font-size: 22px; letter-spacing: -.03em; }
+    .count { color: var(--muted); font-size: 14px; }
+    .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 29px; }
+    .filter { border: 1px solid var(--line); border-radius: 999px; padding: 9px 14px; color: var(--muted); background: #fff; font: inherit; font-size: 14px; cursor: pointer; }
+    .filter:hover, .filter.active { border-color: var(--green); color: #fff; background: var(--green); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 18px; }
+    .card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); box-shadow: var(--shadow); transition: transform .18s ease, box-shadow .18s ease; }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 18px 42px rgba(59,69,74,.13); }
+    .preview { height: 178px; display: grid; place-items: center; padding: 22px; background: linear-gradient(135deg, #f4f8f1, #edf3ec); }
+    .preview img { width: 100%; height: 100%; object-fit: contain; }
+    .preview img.photo { object-fit: cover; border-radius: 10px; }
+    .placeholder { color: var(--green-dark); font-size: 40px; font-weight: 800; }
+    .card-body { padding: 16px; }
+    .category { color: var(--green-dark); font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .filename { overflow: hidden; margin: 5px 0 14px; font-size: 15px; font-weight: 750; text-overflow: ellipsis; white-space: nowrap; }
+    .actions { display: flex; gap: 8px; }
+    .button { flex: 1; border: 1px solid var(--line); border-radius: 10px; padding: 9px 10px; color: var(--ink); background: #fff; font: inherit; font-size: 12px; font-weight: 700; text-align: center; text-decoration: none; cursor: pointer; }
+    .button.primary { border-color: var(--green); color: #fff; background: var(--green); }
+    .button:hover { border-color: var(--green); }
+    .empty, .loading, .error { padding: 50px 20px; border: 1px dashed #cbd7cc; border-radius: var(--radius); color: var(--muted); text-align: center; background: #fff; }
+    .error { border-color: #e5b7a8; color: #9b5038; }
+    footer { padding: 24px 0 40px; color: var(--muted); font-size: 13px; text-align: center; }
+    footer a { color: var(--green-dark); font-weight: 700; text-decoration: none; }
+    .toast { position: fixed; right: 20px; bottom: 20px; z-index: 3; transform: translateY(15px); opacity: 0; pointer-events: none; padding: 12px 16px; border-radius: 12px; color: #fff; background: var(--ink); box-shadow: var(--shadow); transition: .2s ease; }
+    .toast.show { transform: translateY(0); opacity: 1; }
+    @media (max-width: 620px) { .wrap { width: min(100% - 26px, 1180px); } .hero { padding-top: 44px; } .github { display: none; } .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } .preview { height: 135px; padding: 14px; } .card-body { padding: 12px; } .button { padding: 8px 5px; font-size: 11px; } }
+    @media (max-width: 390px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="file:///Users/bigboss/Documents/Codex/2026-08-04/referenced-chatgpt-conversation-this-is-an/outputs/" aria-label="SmartHomeFlor Startseite"><span class="brand-mark">⌂</span><span>SmartHomeFlor</span></a>
+      <a class="github" href="https://github.com/smarthomeflor/media" target="_blank" rel="noreferrer">Repository auf GitHub öffnen ↗</a>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Media Library</div>
+      <h1>Alles für deine SmartHomeFlor Medien.</h1>
+      <p class="lead">Icons, Bilder und Illustrationen an einem Ort. Datei auswählen, URL kopieren und direkt in deiner Website verwenden.</p>
+      <div class="toolbar">
+        <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg><input id="search" type="search" placeholder="Dateien durchsuchen …" aria-label="Dateien durchsuchen"></label>
+        <button class="refresh" id="refresh" type="button">Bibliothek aktualisieren</button>
+      </div>
+    </div>
+  </section>
+  <main class="wrap">
+    <div class="section-head"><h2>Medien</h2><div class="count" id="count">1 Datei</div></div>
+    <div class="filters" id="filters"><button class="filter active" data-category="all" type="button">✦&nbsp; Alle Medien</button><button class="filter " data-category="icons" type="button">⌘&nbsp; Icons</button></div>
+    <div class="loading" id="status" hidden="">Die Medienbibliothek wird geladen …</div>
+    <div class="grid" id="grid"><article class="card"><div class="preview"><img class="" src="./index_files/icon_sicherheitbeinacht.png" alt="icon_sicherheitbeinacht.png" loading="lazy" onerror="this.parentElement.innerHTML=&#39;&lt;div class=placeholder&gt;SF&lt;/div&gt;&#39;"></div><div class="card-body"><div class="category">Icons</div><div class="filename" title="icons/beleuchtung/icon_sicherheitbeinacht.png">icon_sicherheitbeinacht.png</div><div class="actions"><a class="button" href="./index_files/icon_sicherheitbeinacht.png" target="_blank" rel="noreferrer">Öffnen</a><button class="button primary copy" data-url="https://smarthomeflor.github.io/media/icons/beleuchtung/icon_sicherheitbeinacht.png" type="button">URL kopieren</button></div></div></article></div>
+  </main>
+  <footer><div class="wrap">SmartHomeFlor Media Library · <a href="https://github.com/smarthomeflor/media" target="_blank" rel="noreferrer">Quelle auf GitHub</a></div></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script>
+    const owner = 'smarthomeflor';
+    const repo = 'media';
+    const rawBase = `https://${owner}.github.io/${repo}/`;
+    const apiBase = `https://api.github.com/repos/${owner}/${repo}/git/trees/`;
+    const wanted = ['icons', 'hero', 'illustrations', 'feature', 'cta', 'logos'];
+    const labels = { all: 'Alle Medien', icons: 'Icons', hero: 'Hero', illustrations: 'Illustrations', feature: 'Feature', cta: 'CTA', logos: 'Logos' };
+    const icons = { all: '✦', icons: '⌘', hero: '◒', illustrations: '✎', feature: '◆', cta: '↗', logos: '◇' };
+    let files = [], active = 'all';
+    const $ = id => document.getElementById(id);
+    const isMedia = path => /\.(svg|png|jpe?g|webp|gif|avif|ico)$/i.test(path);
+    const categoryFor = path => { const first = path.split('/')[0].toLowerCase(); return wanted.includes(first) ? first : 'all'; };
+    function fileName(path) { return path.split('/').pop(); }
+    function fileUrl(path) { return rawBase + path.split('/').map(encodeURIComponent).join('/'); }
+    function renderFilters() {
+      const cats = ['all', ...wanted.filter(cat => files.some(file => file.category === cat))];
+      $('filters').innerHTML = cats.map(cat => `<button class="filter ${cat === active ? 'active' : ''}" data-category="${cat}" type="button">${icons[cat]}&nbsp; ${labels[cat]}</button>`).join('');
+      document.querySelectorAll('.filter').forEach(button => button.addEventListener('click', () => { active = button.dataset.category; renderFilters(); render(); }));
+    }
+    function render() {
+      const query = $('search').value.trim().toLowerCase();
+      const shown = files.filter(file => (active === 'all' || file.category === active) && file.path.toLowerCase().includes(query));
+      $('count').textContent = `${shown.length} ${shown.length === 1 ? 'Datei' : 'Dateien'}`;
+      if (!shown.length) { $('grid').hidden = true; $('status').hidden = false; $('status').className = 'empty'; $('status').textContent = 'Keine passenden Dateien gefunden.'; return; }
+      $('status').hidden = true; $('grid').hidden = false;
+      $('grid').innerHTML = shown.map(file => {
+        const image = isMedia(file.path);
+        const preview = image ? `<img class="${/\.(jpe?g|webp|gif|avif)$/i.test(file.path) ? 'photo' : ''}" src="${fileUrl(file.path)}" alt="${fileName(file.path)}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=placeholder>SF</div>'">` : '<div class="placeholder">SF</div>';
+        return `<article class="card"><div class="preview">${preview}</div><div class="card-body"><div class="category">${labels[file.category] || 'Datei'}</div><div class="filename" title="${file.path}">${fileName(file.path)}</div><div class="actions"><a class="button" href="${fileUrl(file.path)}" target="_blank" rel="noreferrer">Öffnen</a><button class="button primary copy" data-url="${fileUrl(file.path)}" type="button">URL kopieren</button></div></div></article>`;
+      }).join('');
+      document.querySelectorAll('.copy').forEach(button => button.addEventListener('click', () => copyUrl(button.dataset.url)));
+    }
+    async function copyUrl(url) {
+      try { await navigator.clipboard.writeText(url); showToast('URL kopiert'); }
+      catch { showToast('Kopieren ist in diesem Browser nicht verfügbar'); }
+    }
+    function showToast(message) { const toast = $('toast'); toast.textContent = message; toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 2200); }
+    async function load() {
+      $('status').hidden = false; $('status').className = 'loading'; $('status').textContent = 'Die Medienbibliothek wird geladen …'; $('grid').hidden = true;
+      try {
+        let response = await fetch(apiBase + 'main?recursive=1', { headers: { Accept: 'application/vnd.github+json' } });
+        if (!response.ok) response = await fetch(apiBase + 'master?recursive=1', { headers: { Accept: 'application/vnd.github+json' } });
+        if (!response.ok) throw new Error('Repository konnte nicht geladen werden');
+        const data = await response.json();
+        files = (data.tree || []).filter(item => item.type === 'blob' && isMedia(item.path)).map(item => ({ path: item.path, category: categoryFor(item.path) }));
+        renderFilters(); render();
+      } catch (error) { $('count').textContent = ''; $('status').className = 'error'; $('status').textContent = 'Die Bibliothek konnte gerade nicht geladen werden. Bitte später erneut versuchen.'; $('status').hidden = false; }
+    }
+    $('search').addEventListener('input', render);
+    $('refresh').addEventListener('click', load);
+    load();
+  </script>
+
+
+</body></html>
